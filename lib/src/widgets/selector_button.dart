@@ -43,9 +43,10 @@ class SelectorButton extends StatelessWidget {
                   key: Key(TestHelper.DropdownButtonKeyValue),
                   icon: Icon(
                     Icons.keyboard_arrow_down_outlined,
-                    size: 14,
-                    color: Colors.grey,
                   ),
+                  iconDisabledColor: Colors.grey,
+                  iconEnabledColor: Colors.grey,
+                  iconSize: 14,
                   hint: Item(
                     country: country,
                     showFlag: selectorConfig.showFlags,
