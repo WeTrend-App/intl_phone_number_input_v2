@@ -138,8 +138,6 @@ extension phonenumbertypeproperties on PhoneNumberType {
         return 6;
       case PhoneNumberType.PERSONAL_NUMBER:
         return 7;
-      case PhoneNumberType.PREMIUM_RATE:
-        return 8;
       case PhoneNumberType.UAN:
         return 9;
       case PhoneNumberType.VOICEMAIL:
