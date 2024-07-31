@@ -72,7 +72,7 @@ class _Flag extends StatelessWidget {
                 : Image.asset(
                     country!.flagUri,
                     width: 32.0,
-                    package: 'intl_phone_number_input',
+                    package: 'intl_phone_number_input_v2',
                     errorBuilder: (context, error, stackTrace) {
                       return SizedBox.shrink();
                     },
