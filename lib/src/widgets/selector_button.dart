@@ -41,12 +41,6 @@ class SelectorButton extends StatelessWidget {
             ? DropdownButtonHideUnderline(
                 child: DropdownButton<Country>(
                   key: Key(TestHelper.DropdownButtonKeyValue),
-                  icon: Icon(
-                    Icons.keyboard_arrow_down_outlined,
-                  ),
-                  iconDisabledColor: Colors.grey,
-                  iconEnabledColor: Colors.grey,
-                  iconSize: 14,
                   hint: Item(
                     country: country,
                     showFlag: selectorConfig.showFlags,
@@ -129,6 +123,8 @@ class SelectorButton extends StatelessWidget {
       context: inheritedContext,
       barrierDismissible: true,
       builder: (BuildContext context) => AlertDialog(
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(0.0))),
         content: Directionality(
           textDirection: Directionality.of(inheritedContext),
           child: Container(
