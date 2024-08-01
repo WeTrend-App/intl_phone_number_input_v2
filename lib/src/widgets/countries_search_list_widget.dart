@@ -67,6 +67,7 @@ class _CountrySearchListWidgetState extends State<CountrySearchListWidget> {
             decoration: getSearchBoxDecoration(),
             controller: _searchController,
             autofocus: widget.autoFocus,
+            cursorColor: Colors.black,
             onChanged: (value) {
               final String value = _searchController.text.trim();
               return setState(
