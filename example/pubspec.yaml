@@ -14,7 +14,7 @@ description: A new Flutter application.
 version: 1.0.0+1
 
 environment:
-  sdk: ">=3.0.2 <4.0.0"
+  sdk: ">=3.3.3 <4.0.0"
 
 dependencies:
   flutter:
@@ -31,7 +31,9 @@ dev_dependencies:
     sdk: flutter
   test: any
 
-  libphonenumber: ^2.0.0
+  libphonenumber:
+    git:
+      url: https://github.com/WeTrend-App/libphonenumber.git
   intl_phone_number_input_v2:
     path: ../
 
